@@ -11,3 +11,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+main > .main > img {
+    height: 100vh;
+    width: 100vw;
+}
