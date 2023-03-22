@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function selectharddisk() {
+            var lsdhd = document.getElementById("lsdhd")
+            var txtram = document.getElementById("txtram")
+            if (parseInt(lsdhd.value) >= 5) {
+                txtram.disabled = false;
+                lsdhd.disabled = true;
+            }
+        }
+        function selectRam() {
+            var lsdhd = document.getElementById("lsdhd")
+            var lstGraphics = document.getElementById("lstGraphics")
+            if (txtram.value >= 4) {
+                lstGraphics.disabled = false;
+                txtram.disabled = true;
+            }
+        }
+function selectGraphic() {
+    var lstGraphics=document.getElementById("lstGraphics")
+    var btnInstall=document.getElementById("btnInstall")
+    if(lstGraphics.value=="yes"){
+        btnInstall.disabled=false;
+        lstGraphics.disabled=true;
+    }
+}
+
+function Install() {
+    document.write("game Installed successfully")
+}
+
+
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <fieldset>
+            <legend>install game</legend>
+            <dl>
+                <dt>select available hard disk space</dt>
+                <dd>
+                    <select name="lsdhd" id="lsdhd" onchange="selectharddisk()">
+                        <option value="2">2GB</option>
+                        <option value="5">5GB</option>
+                        <option value="10">10GB</option>
+                    </select>
+                </dd>
+                <dt>select available ram</dt>
+                <dd><input type="number" min="1" max="1" value="1" id="txtram " disabled onchange="selectRam()"></dd>
+                <dt>Is grapic card availble or no</dt>
+                <dd>
+                    <select>
+                        <option id="lstGraphics" disabled onchange="">YES</option>
+                        <option>No</option>
+                    </select>
+                </dd>
+                <br>
+                <input type="button" id="btnInstall" value="install" disabled onClick="selectGraphic()">
+            </dl>
+        </fieldset>
+    </div>
+</body>
+
+</html>

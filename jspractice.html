@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getmyf() {
+       
+        const color = ['red' , 'orange', 'yellow', 'green', 'blue', 'violet']
+         const colors = document.querySelector(".class");
+         colors.innerHTML=color.indexOf('red')
+       
+
+        }
+
+        
+     var colorss = ['red' , 'orange', 'yellow', 'green', 'blue', 'violet' ,"reds"]
+        // var result = colorss.splice(6,1)
+        // console.log(result)
+// colorss.splice(1, 0, 'redora')
+// console.log(colorss)
+colorss.splice(2, 2, 'Deleted')
+document.write(colorss)
+
+const board = [
+    ['0', null, 'X'],
+    ['null', 'X', 0],
+    ['X', '0', 'null']
+]
+
+
+console.log(board)
+const person = {
+    name: 'gummy be',
+    color: 'red',
+    price: 13,
+    flavors: ['apple', 'mango', 'orange']
+} 
+console.log(person.flavors[0])
+
+    </script>
+</head>
+<body>
+    <div  >
+    <button onClick="getmyf()" >button</button>
+    <p class="class"></p>
+</div>
+</body>
+</html>
