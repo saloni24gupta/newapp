@@ -48,3 +48,20 @@ result = isRightTriangle(3, 4, 5)
 console.log(result)
 cls = document.querySelector(".cl2")
 cls.innerHTML=result
+
+
+console.log("sending request to server")
+setTimeout(() => {
+    console.log("Here is your data from the serve.....r")
+
+} , 3000)
+
+console.log("I AM AT THE END OF THE FILE!")
+
+setTimeout(() => {
+    document.body.style.backgroundColor = 'orange';
+}, 2000)
+setTimeout(() => {
+    document.body.style.backgroundColor = 'red';
+}, 2000)
+console.log('finish')
