@@ -4,3 +4,14 @@ for(i=0; i<100; i++) {
     button.innerText = 'button'
     container.appendChild(button)
 }
+
+const box = document.querySelector("#box")
+for(i=0; i<100; i++){
+
+    const boxes = document.createElement("box")
+    boxes.innerText = 'i am a box';
+   box.appendChild(boxes)
+   boxes.setAttribute('class', 'mb')
+
+}
+
