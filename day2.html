@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+h3.classList.add('green')
+
+    function f1() {
+
+        var product = {
+            Id: 1,
+            Name: "samsungtv",
+            price: 45000.50,
+            IsInStck: false,
+            Quantity: 3,
+            shippedTo: ['delhi', 'hyderabad'],
+            Total: function () {
+                return product.Quantity * product.price;
+
+            }
+        }
+        if (product.IsInStck == true)
+            stock = "available"
+        else
+            stock = "out of stock"
+        document.write("Id: " + product.Id + "Name: " + product.Name, "price : " + product.price, "Stock :" + product.IsInStck, "total amount: " + product.Total())
+
+
+    }
+    f1();
+
+    function showevent() {
+        var products= [ {Id: 1, Name: "samsungtv", price: 45000, photo:"movies.jfif"},
+    {Id: 2, Name: "smoviengtv", price: 4500, photo:"movie.jfif"},
+    {Id: 3, Name: "download", price: 35000, photo:"images(1).jfif"},
+{Id: 4, Name: "images", price: 15000, photo:"download.jfif"}]
+
+var Namee = document.getElementById("prodname")
+var Img = document.getElementById("imga")
+var ID = document.getElementById("prodid")
+var txtrange = document.getElementById("txtrange")
+var Prize = document.getElementById("price")
+Img.src=products[txtrange.value].photo
+Namee.innerHTML=products[txtrange.value].Name
+ID.innerHTML=products[txtrange.value].Id
+Prize.innerHTML=products[txtrange.value].price
+console.log(products[1].price)
+    }
+
+const links = document.querySelectorAll('a')
+    for (let link of links) {
+    console.log(links)
+}
+</script>
+
+<body>
+    <table cellspacing="4" cellpadding="4" width="500" border="2">
+        <tr>
+            <td><img  id="imga" src="movies.jfif" height="200" width="200" alt=""></td>
+        </tr>
+        <tr>
+            <td> product name</td>
+            <td id="prodname"></td>
+        </tr>
+        <tr>
+            <td>Product ID</td>
+            <td id="prodid"></td>
+
+        </tr>
+        <tr>
+            <td>Product Price</td>
+            <td id="price"></td>
+        </tr>
+    </table>
+    <div>
+    <!-- <input type="range" id="txtrange"  min="0" max="3" value="0" onchange="showevent()" ></div> -->
+</body>
+
+</html>

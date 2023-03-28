@@ -60,8 +60,33 @@ console.log("I AM AT THE END OF THE FILE!")
 
 setTimeout(() => {
     document.body.style.backgroundColor = 'orange';
+    setTimeout(() => {
+        document.body.style.backgroundColor = 'red';
+    }, 2000)
 }, 2000)
 setTimeout(() => {
     document.body.style.backgroundColor = 'red';
 }, 2000)
 console.log('finish')
+
+
+const delayedColorChange = (newColor, delay, doNext) => {
+    setTimeout( () => {
+        document.body.style.backgroundColor = newColor;
+    }, delay)
+}
+delayedColorChange('olive', 3000), () => {
+    delayedColorChange('teal', 3000, () => {
+        delayedColorChange('yellow', 4000, () => {
+            delayedColorChange('black',  2000, () => {
+                
+            })
+        })
+    });
+};
+const links = document.querySelectorAll('.box')
+    for (let link of links) {
+    console.log(links)
+}
+
+
