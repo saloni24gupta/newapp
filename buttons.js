@@ -32,3 +32,15 @@ function colorize() {
     this.style.backgroundColor = makeRandomColor();
     this.style.color = makeRandomColor();
 }
+const input = document.querySelector('input')
+input.addEventListener('keydown' ,function(e)  {
+    console.log(e)
+    console.log(e.key)
+    console.log(e.code)
+})
+// document.querySelector('input').addEventListener('keyup' ,function(e)  {
+//     console.log('e')
+// })
+document.querySelector('h1').addEventListener('click', function(evt) {
+    console.log(evt)
+})
