@@ -27,4 +27,8 @@ for(let span of allspans) {
     i++;
 }
 
+const image = document.querySelector(".cont")
+// cont.src= 'https://devsprouthosting.com/images/chicken.jpg' 
 
+cont.setAttribute('src', 'https://devsprouthosting.com/images/chicken.jpg')
+cont.setAttribute('alt', 'chicken')
