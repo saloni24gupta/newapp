@@ -11,7 +11,12 @@ form.addEventListener('submit', function(e) {
     // const newtweet = document.querySelectorAll('input')[1]
     const uname = form.elements.username.value;
     const newtw =  form.elements.tweet.value;
+    // const uname = form.elements.username;
+    // const newtw =  form.elements.tweet;
     addTweet(uname, newtw)
+    // addTweet(uname.value, newtw.value)
+    // uname.value = ' ';
+    // newtw.value = ' ';
 })
 
 
