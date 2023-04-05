@@ -10,7 +10,7 @@ function fixNav() {
         nav.classList.remove('active')
     }
 }
-// let text = "Hello World!";
-// let encoded = window.btoa(text);
-// let decoded = window.atob(encoded);
-// console.log(decoded)
+let text = "65657Hello World!";
+let encoded = window.btoa(text);
+let decoded = window.atob(encoded);
+console.log(encoded)
