@@ -1,16 +1,12 @@
-function MyButton() {
-  return (
-    <button>
-      I'm a button
-    </button>
-  );
-}
+import MyButton from "./public/src/components/Navbar";
 
-export default function MyApp() {
+ function MyApp() {
   return (
     <div>
       <h1>Welcome to my app</h1>
+      <MyButton></MyButton>
    
     </div>
   );
 }
+export default MyApp;
