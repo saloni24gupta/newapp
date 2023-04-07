@@ -1,12 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
-body {
-    background-color: aliceblue;
-
-}
-
 .expense-item {
     display: flex;
     flex-direction: row;
@@ -33,7 +27,6 @@ body {
 }
 
 .expense-item h2 {
-
     margin: 0 1rem;
     flex: 1;
     font-size: 1rem;
