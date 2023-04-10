@@ -14,4 +14,14 @@ for (i = 0; i < 100; i++) {
     boxes.setAttribute('class', 'mb')
 
 }
+const persons = [
+ {fullname: "saloni", lastname: "Gupta" },
+ {fullname: "samriddhi", lastname: "Gup"} ,
+ {fullname: "vishal", lastname: "ksudhsl"}   
+];
 
+document.getElementById("demo").innerText = persons.map(showfullname);
+
+function showfullname(item) {
+    return[item.fullname, item.lastname].join(" ");
+}
