@@ -5,7 +5,7 @@ function NewExpense() {
 const saveExpenseDataHandler = (enterExpenseData) => {
     const expenseData = {
         ...enterExpenseData,
-        id: Math.round().toString()
+        id: Math.random().toString()
     };
     console.log(expenseData);
 }
