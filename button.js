@@ -58,5 +58,5 @@ else {
 }gg 
 }
 else{
-    console.log("passwprd too short")
+    console.log("passwprdd too short")
 }
