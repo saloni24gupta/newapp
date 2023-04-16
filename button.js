@@ -55,8 +55,8 @@ if (password.length >= 6){
 }
 else {
     console.log("valid password")
-}gg 
+}
 }
 else{
-    console.log("passwprdd too short")
+    console.log("passaswawliejaswprdd too short")
 }
