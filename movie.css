@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+   
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  
+}
+.search {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 4px;
+    border: 2px solid var(--primary-color);
+}
+.search:focus {
+    border-color: var(--primary-color);
+    border: none;
+    color: #bbb;
+}
+img {
+    width: 100%
+}
+.movie {
+    height: 500px;
+    width: 300px;
+    background-color: var(--secondary-color);
+    margin: 20px;
+}
