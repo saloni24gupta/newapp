@@ -29,6 +29,7 @@ body {
     top: 20px;
     letter-spacing: 1px;
     box-shadow: 0 3px rgba(249, 202, 36, 0.5);
+    z-index: 100;
 }
 
 .magic:focus {
@@ -38,4 +39,27 @@ body {
 .magic:active {
     box-shadow: none;
     transform: translateY(2px);
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.box {
+    background-image: url('https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    position: relative;
+    height: 125px;
+    width: 125px;
+}
+
+.boxes.big {
+    width: 600px;
+    height: 600px;
 }
